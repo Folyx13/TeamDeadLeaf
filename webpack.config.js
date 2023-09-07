@@ -20,6 +20,18 @@ module.exports = {
         }, {
             test: /\.css$/, // tous les fichiers .css
             use: ['style-loader', 'css-loader'] // on utilise style-loader et css-loader
+        },{
+            test: /\.(png|jpg|jpeg|webp|gif)$/,
+            use: [{
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'img/',
+                    publicPath: 'img/',
+                    emitFile: true,
+                    esModule: false
+                }
+            }]
         }]
     },
     plugins: [

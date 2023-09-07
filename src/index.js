@@ -1,9 +1,11 @@
 // index.js
 import { validateAge } from './ageValidator';
 import { validateEmail } from './emailValidator';
+import './img/logo_DeadLeaf.png';
 import './main.css';
 import { validateName } from './nameValidator';
 import { validatePrenom } from './prenomValidator';
+
 
 const nameInput = document.getElementById('nom');
 const prenomInput = document.getElementById('prenom'); 

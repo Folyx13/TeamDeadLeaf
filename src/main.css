@@ -1,69 +1,134 @@
-/* Style général du formulaire */
-form {
-    max-width: 400px;
+/* Reset des marges et des rembourrages par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+    color: #ff4500;
 }
 
 h1 {
+    margin-bottom: 80px;
+    font-size: 3em;
     text-align: center;
 }
 
-/* Style des champs de saisie et du bouton */
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 5px 0;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
 }
 
-button[type="submit"] {
+.presentation {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+
+img {
+    content: "";
+    max-width: 100%;
+}
+
+
+.text {
+    text-align: center;
+}
+
+.formulaire {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ff4500;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulaire h1 {
+    color: #ff4500;
+    text-align: center;
+}
+
+.formulaire input[type="text"],
+.formulaire input[type="number"],
+.formulaire input[type="email"],
+.formulaire input[type="password"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ff4500;
+    border-radius: 3px;
+    font-size: 1em;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.formulaire button[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #ff4500;
     color: #fff;
     border: none;
     border-radius: 3px;
-    font-size: 16px;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
-/* Style pour les messages d'erreur */
-.error {
-    color: #f00;
-    font-size: 14px;
+.formulaire button[type="submit"]:hover {
+    background-color: #d43900;
 }
 
-.obg {
-    font-size: 12px;
+.formulaire .error {
+    color: #f00;
+    font-size: 1em;
+}
+
+.formulaire .obg {
+    font-size: 0.8em;
 }
 
 /* Rendre le formulaire responsive */
 @media screen and (max-width: 600px) {
-    form {
+    .formulaire {
         max-width: 80%;
         padding: 10px;
     }
 
-    input[type="text"],
-    input[type="number"],
-    input[type="email"],
-    input[type="password"] {
-        width: 100%;
-        padding: 5px 0px;
-        font-size: 14px;
+    .formulaire input[type="text"],
+    .formulaire input[type="number"],
+    .formulaire input[type="email"],
+    .formulaire input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 8px;
+        font-size: 0.9em;
     }
 
-    button[type="submit"] {
+    .formulaire button[type="submit"] {
         padding: 8px;
-        font-size: 14px;
+        font-size: 1em;
     }
 }
