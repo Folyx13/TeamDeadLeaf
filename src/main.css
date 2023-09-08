@@ -93,7 +93,7 @@ img {
     text-align: center;
 }
 
-.formulaire input[type="text"],
+.formulaire input,
 .formulaire input[type="number"],
 .formulaire input[type="email"],
 .formulaire input[type="password"] {
