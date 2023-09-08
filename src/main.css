@@ -93,11 +93,8 @@ img {
     text-align: center;
 }
 
-.formulaire input,
-.formulaire input[type="number"],
-.formulaire input[type="email"],
-.formulaire input[type="password"] {
-    width: calc(100% - 10px);
+.formulaire input {
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 2px solid #ff4500;
@@ -133,7 +130,8 @@ img {
 
 /* Style de la navbar */
 .navbar {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    margin-top: 20px;
     background-color: #1a1a1a;
     color: #fff;
     padding: 10px;
