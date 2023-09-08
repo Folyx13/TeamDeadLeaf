@@ -7,6 +7,7 @@ import { validateName } from './nameValidator';
 import { validatePrenom } from './prenomValidator';
 
 
+
 const nameInput = document.getElementById('nom');
 const prenomInput = document.getElementById('prenom'); 
 const ageInput = document.getElementById('age');

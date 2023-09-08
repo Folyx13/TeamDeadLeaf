@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page de Présentation</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,18 +14,24 @@
     <h1>Bienvenue dans l'univers de la Team DeadLeaf</h1>
     <nav class="navbar">
       <ul>
+        <li><a href="#">accueil</a></li>
         <li><a href="#a_propos">À propos de nous</a></li>
-        <li><a href="#notre_reve">Notre Rêve</a></li>
-        <li><a href="#notre_engagement">Notre Engagement</a></li>
         <li><a href="#formulaire">Formulaire</a></li>
+        <li><a href="#contact">nous contacter</a></li>
+        <li><a href="https://discord.gg/UrGmEhTSKN">Discord</a></li>
       </ul>
     </nav>
   </div>
 
 
+  <div class="flex-container">
+    <div class="centered-image" id="TDL">
+      <img src="img/logo_DeadLeaf.png" alt="Votre Image">
+    </div>
+  </div>
 
   <div class="flex-container">
-    <div class="flex-items">
+    <div class="card">
       <h2>À propos de nous</h2>
       <p>Nous sommes la Team DeadLeaf,
         une équipe de passionnés de Rocket League
@@ -38,7 +43,7 @@
         chaque jour.
       </p>
     </div>
-    <div class="flex-items">
+    <div class="card" id="a_propos">
       <h2>Notre Engagement</h2>
       <p>En tant qu'équipe débutante, nous mettons un point
         d'honneur à développer nos compétences et à créer une
@@ -48,9 +53,8 @@
         cette aventure et ensemble, nous irons toujours plus loin.
       </p>
     </div>
-    <div class="flex-items"><img src="img/logo_DeadLeaf.png" alt="DeadLeaf"></div>
-    <div class="flex-items">
-      <h2 id="notre_reve">Notre Rêve</h2>
+    <div class="card">
+      <h2>Notre Rêve</h2>
       <p>Notre plus grand rêve est de briller sur
         la scène de l'E-sport. Nous croyons en la
         puissance de l'entraînement, de la persévérance
@@ -61,53 +65,72 @@
     </div>
   </div>
 
-  <!-- Section 4: Formulaire-->
-  <section class="formulaire" id="formulaire">
-    <div class="container">
-      <h1>Formulaire interactif</h1>
-      <form id="myForm" method="post">
-        <div>
-          <label for="nom">Nom*:</label>
-          <input type="text" id="nom" name="nom" placeholder="ex: de la tour " required>
-          <p id="nom-error" class="error"></p>
-        </div>
-        <div>
-          <label for="prenom">Prénom* :</label>
-          <input type="text" id="prenom" name="prenom" placeholder="ex: jean-edward " required>
-          <p id="prenom-error" class="error"></p>
-        </div>
-        <div>
-          <label for="age">Âge* :</label>
-          <input type="number" id="age" name="age" placeholder="ex: 455 ans (boomer)" required>
-          <p id="age-error" class="error"></p>
-        </div>
-        <div>
-          <label for="email">Adresse e-mail* :</label>
-          <input type="email" id="email" name="email" autocomplete="on"
-            placeholder="ex: Jean-Edward.De-La-Tour@gmail.com" required>
-          <p id="email-error" class="error"></p>
-        </div>
-        <div>
-          <label for="mdp">Mot de passe* :</label>
-          <input type="password" id="mdp" name="mdp" placeholder="ex: ******" required>
-          <p id="mdp-error" class="error"></p>
-        </div>
-        <div>
-          <button type="submit">Envoyer</button>
-        </div>
-        <div>
-          <p class="obg">*obligatoire</p>
-        </div>
-      </form>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>Nous contacter : contact@teamdeadleaf.com</p>
-    </div>
-  </footer>
+
+  <div class="container discord">
+    <p>voici le formulaire pour devenir membre de la teamdeadleaf, n'hésitez pas a rejoindre le <a
+        href="https://discord.gg/UrGmEhTSKN">Discord</a> ^^</p>
+
+
+
+
+
+    <!-- Section 4: Formulaire-->
+    <section class="formulaire" id="formulaire">
+      <div class="container">
+        <h2>Formulaire TDL</h2>
+        <form id="myForm" method="post">
+          <div>
+            <label for="nom">Nom*:</label>
+            <input type="text" id="nom" name="nom" placeholder="ex: de la tour " required>
+            <p id="nom-error" class="error"></p>
+          </div>
+          <div>
+            <label for="prenom">Prénom* :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="ex: jean-edward " required>
+            <p id="prenom-error" class="error"></p>
+          </div>
+          <div>
+            <label for="age">Âge* :</label>
+            <input type="number" id="age" name="age" placeholder="ex: 455 ans (boomer)" required>
+            <p id="age-error" class="error"></p>
+          </div>
+          <div>
+            <label for="email">Adresse e-mail* :</label>
+            <input type="email" id="email" name="email" autocomplete="on"
+              placeholder="ex: Jean-Edward.De-La-Tour@gmail.com" required>
+            <p id="email-error" class="error"></p>
+          </div>
+          <div>
+            <label for="mdp">Mot de passe* :</label>
+            <input type="password" id="mdp" name="mdp" placeholder="ex: ******" required>
+            <p id="mdp-error" class="error"></p>
+          </div>
+          <div>
+            <button type="submit">Envoyer</button>
+          </div>
+          <div>
+            <p class="obg">*obligatoire</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="contact">
+          <h3>Contact</h3>
+          <p>Email : folyxgamer@gmail.com</p>
+        </div>
+        <div class="discord">
+          <h3>Discord</h3>
+          <p><a href="https://discord.gg/UrGmEhTSKN">Rejoignez-nous sur Discord</a></p>
+        </div>
+      </div>
+    </footer>
+
+
 
 </body>
 
