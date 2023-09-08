@@ -7,7 +7,7 @@ module.exports = {
     entry: './src/index.js', // point d'entrée
     output: {
         filename: 'bundle.js', // nom du fichier de sortie
-        path: path.resolve(__dirname, 'dist'), // dossier de sortie
+        path: path.resolve(__dirname, 'docs'), // dossier de sortie
         clean: true
     },
     module: {
