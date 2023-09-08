@@ -1,6 +1,7 @@
 /* Reset des marges et des rembourrages par défaut */
 * {
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -24,7 +25,6 @@ h3 {
 }
 
 h1 {
-    margin-bottom: 80px;
     font-size: 3em;
     text-align: center;
 }
@@ -34,31 +34,36 @@ p {
     line-height: 1.6;
 }
 
-.presentation {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.image-text {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-
-
-img {
-    content: "";
-    max-width: 100%;
-}
-
-
-.text {
-    text-align: center;
-}
-
+/* Style des sections */
+.presentation,
+.image-text,
+.text,
 .formulaire {
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.presentation h2,
+.image-text h2,
+.text h2,
+.formulaire h1 {
+    color: #ff4500;
+}
+
+.presentation p,
+.image-text p,
+.text p,
+.formulaire p {
+    text-align: center;
+}
+
+/* Style de l'image */
+.image-text img {
+    max-width: 50%;
+}
+
+/* Style du formulaire */
+.formulaire {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -109,6 +114,82 @@ img {
 
 .formulaire .obg {
     font-size: 0.8em;
+}
+
+/* Style de la navbar */
+.navbar {
+    margin-bottom: 200px;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style du footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+}
+
+.flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: flex-start;
+    order: 0;
+}
+
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
 }
 
 /* Rendre le formulaire responsive */
